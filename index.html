@@ -89,8 +89,11 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 IR Education. All rights reserved.</p>
+            <p>&copy; <span id="year">2026</span> IR Education. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
