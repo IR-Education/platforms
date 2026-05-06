@@ -122,6 +122,68 @@ body {
     font-size: 0.95rem;
 }
 
+/* Featured Platform (IRMaths) */
+@media (min-width: 769px) {
+    .featured-platform {
+        grid-column: 1 / -1;
+        flex-direction: row;
+    }
+    
+    .featured-platform .card-image {
+        width: 40%;
+        border-bottom: none;
+        border-right: 1px solid rgba(0,0,0,0.05);
+        height: auto;
+        min-height: 250px;
+    }
+    
+    .featured-platform .card-content {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 40px;
+    }
+    
+    .featured-platform .card-content h2 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+    
+    .featured-platform .card-content p {
+        font-size: 1.1rem;
+        line-height: 1.7;
+    }
+}
+
+/* Coming Soon Platforms */
+.coming-soon {
+    cursor: default;
+    opacity: 0.8;
+}
+
+.coming-soon:hover {
+    transform: none;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border-color: rgba(0,0,0,0.05);
+}
+
+.coming-soon:hover .card-content h2 {
+    color: var(--text-color);
+}
+
+.placeholder-logo {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 2px dashed #ddd;
+    border-radius: 8px;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
 /* Footer */
 .footer {
     text-align: center;
